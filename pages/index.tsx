@@ -2,8 +2,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
-import JoeOfMama from '../components/JoeOfMama';
-import Nigga from '../components/JoeOfPapa';
+import FormOfPerson from '../components/FormOfPerson';
+import Map from '../components/Map';
+import RadioButton from '../components/RadioButton';
+// import JoeOfMama from '../components/JoeOfMama';
+// import Nigga from '../components/JoeOfPapa';
+
 const inter = Inter({ subsets: ['latin'] });
 
 const lue = fetch('/api/hello').then((Response) =>
@@ -15,8 +19,7 @@ const lue = fetch('/api/hello').then((Response) =>
 export default function Home() {
 	return (
 		<>
-			<JoeOfMama></JoeOfMama>
-			<Nigga></Nigga>
+			<RadioButton />
 		</>
 	);
 }
